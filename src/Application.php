@@ -66,6 +66,7 @@ class Application extends BaseApplication
         // Load more plugins here
         $this->addPlugin('Ce/Base');
         $this->addPlugin('Ce/Public');
+        $this->addPlugin('Ce/Log');
     }
 
     /**
