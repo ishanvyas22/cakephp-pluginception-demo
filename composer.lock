@@ -661,7 +661,7 @@
             "dist": {
                 "type": "path",
                 "url": "./plugins/Ce",
-                "reference": "5e4e8efd73a1be297c196764caebf5f4e6458e15"
+                "reference": "068f13fde3c3ed78cb5a5decd29a0ca71b94e9d3"
             },
             "require": {
                 "cakephp/cakephp": "4.4.*",
@@ -674,14 +674,16 @@
             "autoload": {
                 "psr-4": {
                     "Pluginception\\Ce\\": "src/",
-                    "Pluginception\\Ce\\Log\\": "plugins/Log/src/"
+                    "Pluginception\\Ce\\Log\\": "plugins/Log/src/",
+                    "Pluginception\\Ce\\Settings\\": "plugins/Settings/src/"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
                     "Pluginception\\Ce\\Test\\": "tests/",
                     "Cake\\Test\\": "vendor/cakephp/cakephp/tests/",
-                    "Pluginception\\Ce\\Log\\Test\\": "plugins/Log/tests/"
+                    "Pluginception\\Ce\\Log\\Test\\": "plugins/Log/tests/",
+                    "Pluginception\\Ce\\Settings\\Test\\": "plugins/Settings/tests/"
                 }
             },
             "license": [

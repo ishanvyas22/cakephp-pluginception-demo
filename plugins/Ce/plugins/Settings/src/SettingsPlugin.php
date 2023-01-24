@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Pluginception\Ce;
+namespace Pluginception\Ce\Settings;
 
 use Cake\Console\CommandCollection;
 use Cake\Core\BasePlugin;
@@ -10,10 +10,7 @@ use Cake\Core\PluginApplicationInterface;
 use Cake\Http\MiddlewareQueue;
 use Cake\Routing\RouteBuilder;
 
-/**
- * Plugin for Ce
- */
-class CePlugin extends BasePlugin
+class SettingsPlugin extends BasePlugin
 {
     /**
      * Load all the plugin configuration and bootstrap logic.
@@ -26,11 +23,7 @@ class CePlugin extends BasePlugin
      */
     public function bootstrap(PluginApplicationInterface $app): void
     {
-        $logPlugin = new \Pluginception\Ce\Log\LogPlugin();
-        $logPlugin->bootstrap($app);
-
-        $settingsPlugin = new \Pluginception\Ce\Settings\SettingsPlugin();
-        $settingsPlugin->bootstrap($app);
+        debug('Bootstrap of "Ce/Settings" plugin');
     }
 
     /**
@@ -44,11 +37,7 @@ class CePlugin extends BasePlugin
      */
     public function routes(RouteBuilder $routes): void
     {
-        $logPlugin = new \Pluginception\Ce\Log\LogPlugin();
-        $logPlugin->routes($routes);
-
-        $settingsPlugin = new \Pluginception\Ce\Settings\SettingsPlugin();
-        $settingsPlugin->routes($routes);
+        debug('Routes of "Ce/Settings" plugin');
 
         parent::routes($routes);
     }
@@ -62,11 +51,7 @@ class CePlugin extends BasePlugin
     public function middleware(MiddlewareQueue $middlewareQueue): MiddlewareQueue
     {
         // Add your middlewares here
-        $logPlugin = new \Pluginception\Ce\Log\LogPlugin();
-        $middlewareQueue = $logPlugin->middleware($middlewareQueue);
-
-        $settingsPlugin = new \Pluginception\Ce\Settings\SettingsPlugin();
-        $settingsPlugin = $logPlugin->middleware($middlewareQueue);
+        debug('Middleware of "Ce/Settings" plugin');
 
         return $middlewareQueue;
     }
