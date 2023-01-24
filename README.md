@@ -8,6 +8,11 @@ A demo application to try out loading plugins as a whole in `Application.php` vs
 
 - Require `pluginception/ee` vendor package/plugin:
     ```sh
+    composer require pluginception/ee
+    ```
+
+    Removing pluginception/ce package is only required if you have ce package already required:
+    ```sh
     composer remove pluginception/ce
     composer require pluginception/ee
     ```
