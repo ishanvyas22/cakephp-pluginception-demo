@@ -11,7 +11,7 @@ A demo application to try out loading plugins as a whole in `Application.php` vs
     composer require pluginception/ee
     ```
 
-    Removing pluginception/ce package is only required if you have ce package already required:
+    If you have `pluginception/ce` already required:
     ```sh
     composer remove pluginception/ce
     composer require pluginception/ee
