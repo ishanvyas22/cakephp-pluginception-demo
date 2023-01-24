@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Ce\Log\Controller;
+namespace Pluginception\Ce\Controller;
 
 use App\Controller\AppController as BaseController;
 

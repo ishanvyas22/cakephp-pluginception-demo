@@ -1,4 +1,4 @@
-# Ce/Public plugin for CakePHP
+# Ce plugin for Pluginception
 
 ## Installation
 
@@ -7,5 +7,5 @@ You can install this plugin into your CakePHP application using [composer](https
 The recommended way to install composer packages is:
 
 ```
-composer require ce/public
+composer require pluginception/ce
 ```

@@ -1,19 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Ce\Base;
+namespace Pluginception\Ce\Log;
 
 use Cake\Console\CommandCollection;
-use Cake\Core\BasePlugin as CakeBasePlugin;
+use Cake\Core\BasePlugin;
 use Cake\Core\ContainerInterface;
 use Cake\Core\PluginApplicationInterface;
 use Cake\Http\MiddlewareQueue;
 use Cake\Routing\RouteBuilder;
 
-/**
- * Plugin for Ce\Base
- */
-class BasePlugin extends CakeBasePlugin
+class LogPlugin extends BasePlugin
 {
     /**
      * Load all the plugin configuration and bootstrap logic.
@@ -26,7 +23,7 @@ class BasePlugin extends CakeBasePlugin
      */
     public function bootstrap(PluginApplicationInterface $app): void
     {
-        debug('Bootstrap of "Base" plugin');
+        debug('Bootstrap of "Ce/Log" plugin');
     }
 
     /**
@@ -40,15 +37,8 @@ class BasePlugin extends CakeBasePlugin
      */
     public function routes(RouteBuilder $routes): void
     {
-        $routes->plugin(
-            'Ce/Base',
-            ['path' => '/ce/base'],
-            function (RouteBuilder $builder) {
-                // Add custom routes here
+        debug('Routes of "Ce/Log" plugin');
 
-                $builder->fallbacks();
-            }
-        );
         parent::routes($routes);
     }
 
@@ -61,6 +51,7 @@ class BasePlugin extends CakeBasePlugin
     public function middleware(MiddlewareQueue $middlewareQueue): MiddlewareQueue
     {
         // Add your middlewares here
+        debug('Middleware of "Ce/Log" plugin');
 
         return $middlewareQueue;
     }
