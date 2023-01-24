@@ -26,6 +26,7 @@ class BasePlugin extends CakeBasePlugin
      */
     public function bootstrap(PluginApplicationInterface $app): void
     {
+        debug('Bootstrap of "Base" plugin');
     }
 
     /**

@@ -26,6 +26,7 @@ class PublicPlugin extends BasePlugin
      */
     public function bootstrap(PluginApplicationInterface $app): void
     {
+        debug('Bootstrap of "Public" plugin');
     }
 
     /**
