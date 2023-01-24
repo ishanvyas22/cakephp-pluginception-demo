@@ -1,0 +1,28 @@
+{
+    "name": "pluginception/ee",
+    "description": "Root EE plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "cakephp/cakephp": "4.4.*",
+        "pluginception/ce": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5 || ^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pluginception\\Ee\\": "src/",
+            "Pluginception\\Ee\\Sso\\": "plugins/Sso/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pluginception\\Ee\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/",
+            "Pluginception\\Ee\\Sso\\Test\\": "plugins/Sso/tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}

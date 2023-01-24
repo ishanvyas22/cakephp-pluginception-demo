@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2739c7307a4b8f78d31092e59d66a7db",
+    "content-hash": "b7e7e8ff810615fb4bb882d44e200c18",
     "packages": [
         {
             "name": "cakephp/cakephp",
@@ -690,6 +690,44 @@
                 "MIT"
             ],
             "description": "Root CE plugin for Pluginception",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "pluginception/ee",
+            "version": "dev-standalone",
+            "dist": {
+                "type": "path",
+                "url": "./plugins/Ee",
+                "reference": "e97813b16668c0c0fd38083dfb5a17e7c9e0d202"
+            },
+            "require": {
+                "cakephp/cakephp": "4.4.*",
+                "php": ">=7.2",
+                "pluginception/ce": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 || ^9.3"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Pluginception\\Ee\\": "src/",
+                    "Pluginception\\Ee\\Sso\\": "plugins/Sso/src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Pluginception\\Ee\\Test\\": "tests/",
+                    "Cake\\Test\\": "vendor/cakephp/cakephp/tests/",
+                    "Pluginception\\Ee\\Sso\\Test\\": "plugins/Sso/tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Root EE plugin for CakePHP",
             "transport-options": {
                 "relative": true
             }
