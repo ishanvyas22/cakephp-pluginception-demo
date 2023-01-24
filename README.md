@@ -21,7 +21,7 @@ A demo application to try out loading plugins as a whole in `Application.php` vs
 
 The EE plugin will load all the CE, all the plugins of CE plugin(see `plugins/Ce/plugins`), EE plugin itself and all the plugins of EE plugin(see `plugins/Ee/plugins`).
 
-<img src="https://raw.githubusercontent.com/ishanvyas22/cakephp-pluginception/298c26b5a3fcfe936f16deef0e8712c2fdc1b635/inception.gif" alt="gif" width="405" height="280">
+[<img src="https://raw.githubusercontent.com/ishanvyas22/cakephp-pluginception/298c26b5a3fcfe936f16deef0e8712c2fdc1b635/inception.gif" alt="gif" width="405" height="280">](https://github.com/ishanvyas22/cakephp-pluginception/blob/ca21dcb37030a8a9bf516a42ce583aa2c1ce15fb/inception.gif)
 
 ### To load CE plugins
 
